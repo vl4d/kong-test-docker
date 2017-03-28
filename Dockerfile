@@ -48,3 +48,6 @@ ENV OPENSSL_DIR $OPENSSL_INSTALL
 
 # adding OpenResty to the PATH 
 ENV PATH $PATH:$OPENRESTY_INSTALL/nginx/sbin:$OPENRESTY_INSTALL/bin
+
+# to do migrations on running db
+CMD kong start

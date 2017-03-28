@@ -1,1 +1,1 @@
-docker build --rm=true --force-rm=true -t test_kong .
+docker build --rm=true --force-rm=true -t vl4d/test_kong .
