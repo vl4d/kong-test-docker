@@ -26,10 +26,10 @@ RUN yum -y upgrade
 RUN yum -y install wget tar perl gcc-c++ readline-devel pcre-devel openssl-devel git make unzip python-pip
 
 # download openssl
-RUN cd $DOWNLOAD_CACHE && wget http://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz | tar xzf openssl-$OPENSSL_VERSION.tar.gz
+RUN cd $DOWNLOAD_CACHE && curl -L http://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz | tar xz
 
 # download OpenResty
-RUN cd $DOWNLOAD_CACHE && wget https://openresty.org/download/openresty-$OPENRESTY_VERSION.tar.gz | tar xzf openresty-$OPENRESTY_VERSION.tar.gz
+RUN cd $DOWNLOAD_CACHE && curl -L https://openresty.org/download/openresty-$OPENRESTY_VERSION.tar.gz | tar xz
 
 # adding installation folder
 ENV OPENSSL_INSTALL $INSTALL_CACHE/openssl-$OPENSSL_VERSION
