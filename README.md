@@ -1,5 +1,6 @@
 # KongTestDocker
-
+See [Mashape/Kong tests](https://github.com/Mashape/kong/blob/master/README.md#tests)
+Docker Image for KongTestDocker [here](https://hub.docker.com/r/vl4d/test_kong)
 This docker image was created in order to install dependencies needed to run kong tests.
 We would copy our custom plugins over and then run tests.
 
